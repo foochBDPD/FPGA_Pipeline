@@ -1,0 +1,49 @@
+----------------------------------------------------------------
+--	This Module is an example of Pipelining
+-- 		from textbook Advanced FPGA Design:
+-- 		Architecture, and optimization.
+-- 		I converted it to VHDL.
+--
+-- By  : Mike Palladino
+-- Date: 8/12/23
+----------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity power3 is
+  
+  port (
+	XPower : out std_logic_vector (7 downto 0);
+	clk    : in  std_logic;
+	X      : in std_logic_vector(7 downto 0)
+    );
+end entity power3;
+
+	Architecture RTL of power3 is 
+
+		signal Xpower1 : std_logic_vector(7 downto 0);
+		signal Xpower2 : std_logic_vector(7 downto 0);
+		signal X1      : std_logic_vector(7 downto 0);
+		signal X2      : std_logic_vector(7 downto 0);
+		
+
+		begin 
+		
+			pipeline_meat_and_taters : process(clk) is 
+				begin 
+				
+				--Pipeline Stage 1
+				X1      <= X;
+				XPower1 <= X;
+				
+				--Pipeline Stage 2
+				X2 <= X1;
+				XPower2 <= XPower1 and X1;
+				
+				--Pipeline Stage 2
+				XPower <= XPower2 and X2;
+				
+				end process pipeline_meat_and_taters;
+	 
+end architecture RTL;

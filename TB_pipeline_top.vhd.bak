@@ -1,0 +1,53 @@
+----------------------------------------------------------------
+--	////// TESTBENCH ////////////////////
+--This Module is an example of Pipelining
+-- 		from textbook Advanced FPGA Design:
+-- 		Architecture, and optimization.
+-- 		I converted it to VHDL.
+--
+-- By  : Mike Palladino
+-- Date: 8/12/23
+----------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity test_pipeline_top is
+    
+  port (
+    tb_in_XPower : in std_logic_vector(7 downto 0);
+	tb_out_clk : out std_logic;
+	tb_out_X   : out std_logic_vector(7 downto 0)
+	    );
+end entity test_pipeline_top;
+
+architecture RTL of test_pipeline_top is
+
+	signal clk  : std_logic := '1';
+	
+  
+begin
+
+  power3_inst : power3
+    
+    port map (
+      XPower  => tb_in_XPower,
+      clk     => tb_out_clk,
+      X       => tb_out_X
+    );
+
+  
+  -- Register syncs to align with output data.
+  clk_gen : process (tb_out_clk) is
+  begin
+    if rising_edge(tb_out_clk) then
+     tb_out_clk  <= not tb_out_clk;
+    end if;
+  end process clk_gen; 
+
+  
+ 
+  
+
+  
+end architecture RTL;

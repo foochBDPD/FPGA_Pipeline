@@ -1,0 +1,210 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+Emux_2to1
+Z0 w1692385537
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining
+Z4 8C:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/pipeline_top.vhd
+Z5 FC:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/pipeline_top.vhd
+l0
+L13
+V?YzHY=@XmQa3n1fl@ANfb3
+!s100 `PJF@8Bzi?I:Z7jEl9=JL0
+Z6 OV;C;10.5b;63
+33
+Z7 !s110 1692386191
+!i10b 1
+Z8 !s108 1692386191.000000
+Z9 !s90 -reportprogress|300|-work|work|-2008|-explicit|C:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/pipeline_top.vhd|
+Z10 !s107 C:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/pipeline_top.vhd|
+!i113 1
+Z11 o-work work -2008 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+DEx4 work 8 mux_2to1 0 22 ?YzHY=@XmQa3n1fl@ANfb3
+l24
+L23
+Vi:>=7gCSnNI0d[Uo^]jCk0
+!s100 o0F=kQ7VTG@;mCnjfa=LH1
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Epower3
+Z13 w1691868073
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R3
+R4
+R5
+l0
+L15
+VQ43M^2bM4CB9d<D[ZYUM_2
+!s100 EY2@[o_Khi7YLB9Z@5Pkf1
+R6
+32
+Z15 !s110 1692380358
+!i10b 1
+Z16 !s108 1692380357.000000
+Z17 !s90 -reportprogress|300|-work|work|C:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/pipeline_top.vhd|
+R10
+!i113 1
+Z18 o-work work
+R12
+Artl
+R14
+R1
+R2
+DEx4 work 6 power3 0 22 Q43M^2bM4CB9d<D[ZYUM_2
+l32
+L24
+VjZJ_NC^:6G^1Gk;JSf?d`3
+!s100 2iFCR<?=6<K824U:zKP_Q2
+R6
+32
+R15
+!i10b 1
+R16
+R17
+R10
+!i113 1
+R18
+R12
+Esync_to_count
+R14
+R1
+R2
+32
+Z19 !s110 1691853932
+!i10b 1
+Z20 w1691853927
+R3
+R4
+R5
+l0
+L10
+VXUc0]4mSi03?OaFihQaef3
+!s100 =Tg0e9nJ3kYHH4QRZPj5f1
+R6
+Z21 !s108 1691853932.000000
+R17
+R10
+!i113 1
+R18
+R12
+Artl
+R14
+R1
+R2
+DEx4 work 13 sync_to_count 0 22 XUc0]4mSi03?OaFihQaef3
+32
+R19
+!i10b 1
+l37
+L27
+VZ55hQ1ncDz<eo=PWWeV[X1
+!s100 gee=h27zA9f6>HCCI4K2b3
+R6
+R21
+R17
+R10
+!i113 1
+R18
+R12
+Etb_mux_2to1
+Z22 w1692396215
+R1
+R2
+R3
+Z23 8C:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/TB_pipeline_top.vhd
+Z24 FC:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/TB_pipeline_top.vhd
+l0
+L19
+VokP]]U4OJ6F`TUUXelEIM1
+!s100 mmJ<@<IGH@JU[kaLhnA0i3
+R6
+32
+Z25 !s110 1692396221
+!i10b 1
+Z26 !s108 1692396221.000000
+Z27 !s90 -reportprogress|300|C:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/TB_pipeline_top.vhd|
+Z28 !s107 C:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/TB_pipeline_top.vhd|
+!i113 1
+R12
+Atb_architecture
+R1
+R2
+Z29 DEx4 work 11 tb_mux_2to1 0 22 okP]]U4OJ6F`TUUXelEIM1
+l51
+L27
+VMiHd4mAQKjgQE7ZG:07[P1
+!s100 in3o2TamT[MAC3Q3azNH81
+R6
+32
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R12
+Etest_pipeline_top
+Z30 w1692380449
+R14
+R1
+R2
+R3
+R23
+R24
+l0
+L15
+VQe]kG^I=?FkB6N[o0gG793
+!s100 ]oSDMO0<ZaLTVjN801e1T0
+R6
+32
+!s110 1692380452
+!i10b 1
+!s108 1692380452.000000
+R27
+R28
+!i113 1
+R12
+Artl
+R14
+R1
+R2
+DEx4 work 17 test_pipeline_top 0 22 ;SZB3`1?>9HOe>hf`o5<<1
+33
+!s110 1691864359
+!i10b 1
+l41
+L24
+VgWm:X90BLf3bLW:MfG:^k3
+!s100 `b]>H199^2=eF4BCQf2ZO2
+R6
+!s108 1691864359.000000
+!s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/TB.vhd|
+!s107 C:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/TB.vhd|
+!i113 1
+R11
+R12
+FC:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/TB.vhd
+8C:/Users/mpall/OneDrive/Desktop/FPGA_Pipelining/TB.vhd
